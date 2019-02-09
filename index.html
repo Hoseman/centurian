@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>My YT Player</title>
+
+
+<link href="jquery.mb.YTPlayer.min.css" media="all" rel="stylesheet" type="text/css">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script src="jquery.mb.YTPlayer.js"></script>
+<style>
+body {
+    padding:0;
+    margin:0;
+}
+#P1 {
+            width: 100%;
+            height: 400px;
+            background: rgba(81, 150, 191, 0.60);
+            position: relative;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            background: url("assets/ytplayer_img.jpg") no-repeat center center;
+            background-size: cover;
+        }
+</style>
+</head>
+<body>
+
+<script>
+// Jquery YT Player    
+jQuery(function(){
+    jQuery(".player").YTPlayer();
+});
+// Jquery YT Player  
+
+jQuery(window).resize(function(e) {
+  showViewportSize();
+});
+
+function showViewportSize() { 
+  var the_height = $(window).height();
+    //alert(the_height);
+  jQuery('#myPlayer').css('height', the_height);
+
+}
+
+</script>
+
+
+<div id="myPlayer" style="background: #000; height: 1250px; width: 100%; position: relative; " ></div>
+
+<div id="P1" class="player" data-property="{videoURL:'http://youtu.be/kXicDwFPQUo',containment:'#myPlayer',startAt:0, mute:false, showControls:false, autoPlay:true, loop:true, opacity:1, addRaster:true, quality:'default'}">
+</div>
+
+<h1>The Content</h1>
+
+<p>
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In porttitor lacinia nibh, vitae ullamcorper felis aliquet a. Pellentesque tempus non metus eu viverra. Fusce fringilla at ipsum vel venenatis. Nulla facilisi. Praesent vel pellentesque quam. Mauris dui dui, dignissim vel imperdiet scelerisque, pharetra at neque. Duis et vulputate odio. Phasellus eu quam sit amet nibh vestibulum efficitur a nec tellus. Sed et fringilla dolor. Curabitur tristique ligula in semper vestibulum. Integer vehicula quam at arcu condimentum, a mollis sapien pellentesque. Nunc cursus tellus in velit porttitor, et volutpat nunc iaculis.
+        
+        Pellentesque mollis sapien nec tellus lacinia, eu finibus lectus aliquet. Vivamus in sagittis est. Ut convallis massa id turpis elementum, at fermentum dolor tincidunt. Ut ornare sed lorem ut dictum. In hac habitasse platea dictumst. Cras gravida a velit sed rhoncus. Morbi malesuada pharetra nisi vitae tempor. Donec libero mi, viverra ut lectus at, volutpat gravida tellus. Curabitur efficitur velit neque, id auctor ligula efficitur in. Duis ut quam leo. Donec at tortor volutpat dolor semper cursus et nec ipsum. Cras commodo aliquam felis sit amet dictum. Proin mattis egestas erat at congue. Nullam arcu turpis, malesuada ut ex quis, eleifend porta diam.
+        
+        Etiam lacinia magna vel lacus tincidunt, blandit vestibulum nibh posuere. Duis venenatis elit nec suscipit ullamcorper. Etiam eleifend nisl eu maximus hendrerit. Quisque non pulvinar urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse iaculis libero vel eleifend vehicula. Nunc sed lacus dapibus, tristique lorem quis, dapibus quam. Nulla eu malesuada odio. Aliquam nisi urna, vehicula in gravida ut, porttitor ac tortor. Sed euismod tortor nibh, eget ultricies nisi suscipit ullamcorper. Etiam suscipit dapibus mi ac euismod. Morbi volutpat augue sed leo convallis dictum.
+        
+        Praesent fringilla enim quis mi pulvinar, id interdum ante rhoncus. Sed iaculis sem id massa pulvinar, vel fringilla enim dictum. Vivamus sagittis vel mauris ac tincidunt. Phasellus hendrerit suscipit leo, in consectetur ipsum iaculis a. Quisque tempor molestie mauris, in dapibus felis vestibulum a. Nullam iaculis, diam non pellentesque fermentum, nunc tellus convallis ante, eu luctus enim neque eu ante. Vivamus accumsan leo id feugiat condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod tortor et blandit dictum. Suspendisse quis mollis purus, vitae malesuada purus. Proin interdum suscipit iaculis. Aliquam lacinia, magna a tempus sodales, ex metus molestie lectus, et condimentum neque libero eu nunc. Cras ligula eros, ornare eu feugiat eget, dignissim sit amet metus. Sed eget felis eu nisl efficitur imperdiet condimentum non quam.
+        
+        Nam lacinia turpis ut mattis interdum. In eu sapien sapien. Sed ut nunc ut lorem malesuada volutpat. Nullam in urna eget enim pellentesque maximus interdum molestie lacus. Sed fringilla id metus nec ornare. Pellentesque elementum convallis porta. Curabitur molestie gravida odio, a cursus justo vulputate vel. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce porttitor, lacus ut dignissim pulvinar, lacus tellus imperdiet magna, sit amet tempus dui erat eget magna. Nam dapibus lectus nec sapien ornare sollicitudin. In hac habitasse platea dictumst. </p>
+
+
+
+<p>
+
+
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In porttitor lacinia nibh, vitae ullamcorper felis aliquet a. Pellentesque tempus non metus eu viverra. Fusce fringilla at ipsum vel venenatis. Nulla facilisi. Praesent vel pellentesque quam. Mauris dui dui, dignissim vel imperdiet scelerisque, pharetra at neque. Duis et vulputate odio. Phasellus eu quam sit amet nibh vestibulum efficitur a nec tellus. Sed et fringilla dolor. Curabitur tristique ligula in semper vestibulum. Integer vehicula quam at arcu condimentum, a mollis sapien pellentesque. Nunc cursus tellus in velit porttitor, et volutpat nunc iaculis.
+
+        Pellentesque mollis sapien nec tellus lacinia, eu finibus lectus aliquet. Vivamus in sagittis est. Ut convallis massa id turpis elementum, at fermentum dolor tincidunt. Ut ornare sed lorem ut dictum. In hac habitasse platea dictumst. Cras gravida a velit sed rhoncus. Morbi malesuada pharetra nisi vitae tempor. Donec libero mi, viverra ut lectus at, volutpat gravida tellus. Curabitur efficitur velit neque, id auctor ligula efficitur in. Duis ut quam leo. Donec at tortor volutpat dolor semper cursus et nec ipsum. Cras commodo aliquam felis sit amet dictum. Proin mattis egestas erat at congue. Nullam arcu turpis, malesuada ut ex quis, eleifend porta diam.
+        
+        Etiam lacinia magna vel lacus tincidunt, blandit vestibulum nibh posuere. Duis venenatis elit nec suscipit ullamcorper. Etiam eleifend nisl eu maximus hendrerit. Quisque non pulvinar urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse iaculis libero vel eleifend vehicula. Nunc sed lacus dapibus, tristique lorem quis, dapibus quam. Nulla eu malesuada odio. Aliquam nisi urna, vehicula in gravida ut, porttitor ac tortor. Sed euismod tortor nibh, eget ultricies nisi suscipit ullamcorper. Etiam suscipit dapibus mi ac euismod. Morbi volutpat augue sed leo convallis dictum.
+        
+        Praesent fringilla enim quis mi pulvinar, id interdum ante rhoncus. Sed iaculis sem id massa pulvinar, vel fringilla enim dictum. Vivamus sagittis vel mauris ac tincidunt. Phasellus hendrerit suscipit leo, in consectetur ipsum iaculis a. Quisque tempor molestie mauris, in dapibus felis vestibulum a. Nullam iaculis, diam non pellentesque fermentum, nunc tellus convallis ante, eu luctus enim neque eu ante. Vivamus accumsan leo id feugiat condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod tortor et blandit dictum. Suspendisse quis mollis purus, vitae malesuada purus. Proin interdum suscipit iaculis. Aliquam lacinia, magna a tempus sodales, ex metus molestie lectus, et condimentum neque libero eu nunc. Cras ligula eros, ornare eu feugiat eget, dignissim sit amet metus. Sed eget felis eu nisl efficitur imperdiet condimentum non quam.
+        
+        Nam lacinia turpis ut mattis interdum. In eu sapien sapien. Sed ut nunc ut lorem malesuada volutpat. Nullam in urna eget enim pellentesque maximus interdum molestie lacus. Sed fringilla id metus nec ornare. Pellentesque elementum convallis porta. Curabitur molestie gravida odio, a cursus justo vulputate vel. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce porttitor, lacus ut dignissim pulvinar, lacus tellus imperdiet magna, sit amet tempus dui erat eget magna. Nam dapibus lectus nec sapien ornare sollicitudin. In hac habitasse platea dictumst. 
+
+</p>        
+
+
+</body>
+</html>
